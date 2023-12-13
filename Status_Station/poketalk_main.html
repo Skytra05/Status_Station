@@ -127,7 +127,7 @@
          
                      // Check if birthdayDate is a valid date
                      if (!isNaN(birthdayDate.getTime())) {
-                         const calculationDate = "3037-05-15"; // Change this date as needed
+                         const calculationDate = "3037-06-15"; // Change this date as needed
          
                          const age = calculateAge(birthdayDate, calculationDate);
                          birthdayTooltip.textContent = `As of ${calculationDate}, this contact is ${age} years old.`;
@@ -177,7 +177,7 @@
       <div class="navHeader">
          &nbsp;&nbsp; <img src="img/pokenav-logo.png"
             style="vertical-align: middle;" />
-         <span class="headerText">Status Station</span>
+         <span class="headerText">Talonflame</span> <!-- Was originally titled "Status Station, but changed to fit an inside joke by players" -->
          <div class="crowley">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Product of <font style="font-family: verdana;">©</font> The Y
             Corporation
@@ -205,7 +205,7 @@
                       "Team Instinct": "Strength comes from a unity between everything, you can help maintain this unity by joining Instinct today!",
                       "No Membership": "This contact does not have membership in any teams recognized by Your Region.", 
                       "Nouvemur": "Powerful forces awaits those who face us.",
-                      "Prophetic Pâtissiers" : ""
+                      "Prophetic Pâtissiers" : "Humble chefs whose food is magnificently enchanting and will bring a taste of victory..."
 					// Add more teams and descriptions as needed
                   };
                   // ff Badges
@@ -346,7 +346,8 @@
                   </tr>
                       `);
                   }
-                  // Example Contacts
+
+                  //All the main viewable accounts
                   const contacts = [
                   {
                   art: "img/Profile-Pictures/Pokemon_Newspaper_Stamp.png",
@@ -356,7 +357,7 @@
                   gymBadges: [],
                   birthday: "Sep. 14, 2968",
                   team: ["No Membership"],
-                  statusMessage: "Even after three days, the beginning ceremony seems to be just a dream for the contestants of the Kalos Champion's Challenge as the Champion fails to show up.",
+                  statusMessage: "In an interesting twist of events, Star Poke-Preformer Serena Grace appears to give the openning speech. The competition is now offically on and its trainers have already began on their journeys!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -369,6 +370,8 @@
 				  noSignal: false,
 				  doNotDisturb: false
                   },
+
+                  //Gym Leader Accounts
                   {
                   art: "img/Profile-Pictures/Forest-Photo.jpg",
                   name: "Viola Insina",
@@ -377,7 +380,7 @@
                   verifiedBadge: "verified-gym",
                   birthday: "May 7th, 2989",
                   team: ["No Membership"],
-                  statusMessage: "Anyone else really tired of the stress of waiting for this competition to start?",
+                  statusMessage: "Please make sure to check-in the Gym's front office for availablity before trying to face the Gym!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -390,6 +393,8 @@
 				  noSignal: false,
 				  doNotDisturb: false
                   },
+
+                  //Team Nouvemour Accounts
                   {
                   art: "img/Profile-Pictures/Icy-Cavern.jpg",
                   name: "Icirin Galanche",
@@ -453,29 +458,8 @@
 				  noSignal: false,
 				  doNotDisturb: false
                   },
-                  {
-                  art: "img/Profile-Pictures/Furfrou-Pfp.jpg",
-                  name: "The Furfrou Fashionista",
-                  tag: "furfrou_fashionista_🐩",
-                  verifiedBadge: "verified-preformer",
-                  gymBadges: [],
-                  birthday: "March 3rd, 3013",
-                  team: ["No Membership"],
-                  contestNames: ['Eevee Tough Contest', 'Sylveon Cutie Contest', 'Flareon Beauty Contest', 'Jolteon Cool Contest'],
-                  contestRibbons: [1, 3, 2, 2],
-                  statusMessage: "Touring Unova right now! The cities are amazing and the cities' layout gives me some design ideas!",
-                  ownership: [
-                  { name: "Player 1", owned: false },
-                  { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: false },
-                  { name: "Player 4", owned: false },
-                  { name: "Player 5", owned: false },
-                  ],
-                  online: false,
-                  gpsEnabled: false,
-				  noSignal: false,
-				  doNotDisturb: true
-                  },
+
+                  //Company Accounts
                   {
                   art: "img/Profile-Pictures/Team-Valor-Sprite.png",
                   name: "Team Valor Infernos",
@@ -539,6 +523,8 @@
 				  noSignal: false,
 				  doNotDisturb: false
                   },
+                  
+                  //Old Team Accounts
                   {
                   art: "img/Profile-Pictures/Delphox-Pose.jpg",
                   name: "Serena Grace",
@@ -563,6 +549,31 @@
 				  doNotDisturb: false
                   },
                   {
+                  art: "img/Profile-Pictures/Furfrou-Pfp.jpg",
+                  name: "The Furfrou Fashionista",
+                  tag: "furfrou_fashionista_🐩",
+                  verifiedBadge: "verified-preformer",
+                  gymBadges: [],
+                  birthday: "March 3rd, 3013",
+                  team: ["No Membership"],
+                  contestNames: ['Eevee Tough Contest', 'Sylveon Cutie Contest', 'Flareon Beauty Contest', 'Jolteon Cool Contest'],
+                  contestRibbons: [1, 3, 2, 2],
+                  statusMessage: "Touring Unova right now! The cities are amazing and the cities' layout gives me some design ideas!",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: false,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: true
+                  },
+
+                  //Players Accounts
+                  {
                   art: "img/Profile-Pictures/Tyrunt.png",
                   name: "Hermes Arcada",
                   tag: "fossil_life_4ever",
@@ -582,13 +593,75 @@
 				  noSignal: false,
 				  doNotDisturb: false
                   },
+
+                  //Prophetic Pâtissiers Accounts
+                  {
+                  art: "img/Profile-Pictures/Tree-Overlook.png",
+                  name: "Sareus Stimo",
+                  tag: "vivifying_vines",
+                  gymBadges: [],
+                  birthday: "March 1st, 3022",
+                  team: ["Prophetic Pâtissiers"],
+                  statusMessage: "Good luck to everyone! Feel free to message me if you need some extra supplies!",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: true,
+                  gpsEnabled: true,
+				  noSignal: false,
+				  doNotDisturb: false
+                  },
+                  {
+                  art: "img/Profile-Pictures/Dialga.jpg",
+                  name: "Eraeid Stimo",
+                  tag: "miracle_water",
+                  gymBadges: [],
+                  birthday: "March 14th, 3022",
+                  team: ["Prophetic Pâtissiers"],
+                  statusMessage: "Good luck everyone",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: false,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: true
+                  },
+                  {
+                  art: "img/Profile-Pictures/Mystical-Flame.png",
+                  name: "Retalia Stimo",
+                  tag: "vigilant_flame",
+                  gymBadges: [],
+                  birthday: "Feb 28th, 3022",
+                  team: ["Prophetic Pâtissiers"],
+                  statusMessage: "Hope everyone achieves their future goals in the competition! I know I certainly will!",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: true,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: false
+                  },
                   ];
 
 
-
-                  const preContacts = [ //Meant to be for contacts that are premade but not ready to be put in the plot yet.
+                  //Meant to be for contacts that are premade but not ready to be put in the plot yet.
+                  const preContacts = [
                   {
-                  art: "img/Profile-Pictures/",
+                  art: "icons/question.png",
                   name: "Pres. Diantha",
                   tag: "diantha_daring",
                   verifiedBadge: "",
@@ -617,11 +690,11 @@
                   team: ["No Membership"],
                   statusMessage: "Here is an example of a contact who owns all the Gym Badges. Keep in mind that if the contact's name or tag is especially long, the badges may run off the side with the phone overlay (although it will look fine in the reference HTML).",
                   ownership: [
-                  { name: "Player 1", owned: true },
+                  { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: true },
-                  { name: "Player 4", owned: true },
-                  { name: "Player 5", owned: true },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
                   ],
                   online: true,
                   gpsEnabled: true,
@@ -639,11 +712,11 @@
                   team: ["No Membership"],
                   statusMessage: "Here is an example of the Contest Ribbon display! You can hover over the Ribbon to see which Contest Ribbons a contact owns.",
                   ownership: [
-                  { name: "Player 1", owned: true },
+                  { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: true },
-                  { name: "Player 4", owned: true },
-                  { name: "Player 5", owned: true },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
                   ],
                   online: true,
                   gpsEnabled: true,
