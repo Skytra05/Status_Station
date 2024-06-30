@@ -127,7 +127,7 @@
          
                      // Check if birthdayDate is a valid date
                      if (!isNaN(birthdayDate.getTime())) {
-                         const calculationDate = "3037-06-19"; // Change this date as needed
+                         const calculationDate = "3037-06-22"; // Change this date as needed
          
                          const age = calculateAge(birthdayDate, calculationDate);
                          birthdayTooltip.textContent = `As of ${calculationDate}, this contact is ${age} years old.`;
@@ -350,32 +350,6 @@
 
                   //All the main viewable accounts
                   const contacts = [
-                  {
-                  art: "icons/question.png",
-                  name: "Server Annoucement 6/20/37",
-                  tag: "server-Annoucement",
-                  gymBadges: [],
-                  contestRibbons: [],
-                  contestNames: [],
-                  birthday: "No Birthday Entered",
-                  team: [],
-                  statusMessage: "Server is currently going under some maintenance and will be down for a bit. Users will be unable to view or post anything on Talonflame until the maintenance is over. We do apoligize in advance.",
-                  ownership: [
-                  { name: "Player 1", owned: false },
-                  { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: false },
-                  { name: "Player 4", owned: false },
-                  { name: "Player 5", owned: false },
-                  ],
-                  online: false,
-                  gpsEnabled: false,
-				  noSignal: false,
-				  doNotDisturb: true
-                  }
-                  ]
-                  
-                  const removed_contacts = [
-                  
                   //News Account
                   {
                   art: "img/Profile-Pictures/Pokemon_Newspaper_Stamp.png",
@@ -385,7 +359,7 @@
                   gymBadges: [],
                   birthday: "Sep. 14, 2968",
                   team: ["No Membership"],
-                  statusMessage: "For any trainers heading down Route 3 or 4, be sure to visit Parfum Palace for a wonderful preformance being put on later this week!",
+                  statusMessage: "Big news as Talonflame went out over the weekend with no apparent warning! Journalists trying to get the company's view stated that 'they were quite hesitant to give out any report but told us that a local power surge caused the server outage'.",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -399,14 +373,35 @@
 				  doNotDisturb: false
                   },
                   {
+                  art: "img/Profile-Pictures/Battle-Chateau-Badge-Upscaled.png",
+                  name: "Battle Chateau Offical",
+                  tag: "battle-chateau-offical",
+                  gymBadges: [],
+                  contestRibbons: [],
+                  contestNames: [],
+                  birthday: "Oct. 12th 2013",
+                  team: [],
+                  statusMessage: "Gym leader Viola will be challenging another gym leader, of her choosing, for a promotion ranking promotion later today.",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: true,
+                  gpsEnabled: true,
+				  noSignal: false,
+				  doNotDisturb: false
+                  },
+                  {
                   art: "img/Profile-Pictures/Munchlax-Sitting.png",
                   name: "Prof. Whitewood",
                   tag: "whitewood-works",
-                  verifiedBadge: "",
                   gymBadges: [],
                   birthday: "April 20, 2989",
                   team: ["No Membership"],
-                  statusMessage: "Man, I don't care what the voices are saying, I'm eating a footlong subway sandwhich in one sitting!",
+                  statusMessage: "I've learned a lot over the past week, biggest one is that being sent into extreme overtime for work really doesn't give the voices a lot of time to interupt you!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -429,7 +424,7 @@
                   verifiedBadge: "verified-gym",
                   birthday: "May 7th, 2989",
                   team: ["No Membership"],
-                  statusMessage: "As a heads up to any trainers yet to face our gym, my daughter, Luminera, is also up to face as an offical Gym Leader for the competition!",
+                  statusMessage: "For any trainers heading down Route 7 wanting to show off their skills, I'll be at the Battle Chateau later and I'd be eager to see if any of you would show-off to the league!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -439,71 +434,6 @@
                   ],
                   online: true,
                   gpsEnabled: true,
-				  noSignal: false,
-				  doNotDisturb: false
-                  },
-
-                  //Company Accounts
-                  {
-                  art: "img/Profile-Pictures/Team-Valor-Sprite.png",
-                  name: "Team Valor Infernos",
-                  tag: "team-valor-offical",
-                  verifiedBadge: "verified-corporate",
-                  gymBadges: [],
-                  team: ["Team Valor"],
-                  birthday: "Oct. 10th, 3005",
-                  statusMessage: "Good luck to all the trainers competiting in the compeition!",
-                  ownership: [
-                  { name: "Player 1", owned: false },
-                  { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: false },
-                  { name: "Player 4", owned: false },
-                  { name: "Player 5", owned: false },
-                  ],
-                  online: true,
-                  gpsEnabled: false,
-				  noSignal: false,
-				  doNotDisturb: false
-                  },
-                  {
-                  art: "img/Profile-Pictures/Team-Mystic-Sprite.png",
-                  name: "Team Mystic Mirage",
-                  tag: "team-mystic-offical",
-                  verifiedBadge: "verified-corporate",
-                  gymBadges: [],
-                  team: ["Team Mystic"],
-                  birthday: "March. 8th, 3006",
-                  statusMessage: "Good luck, preform well, and dazzle the audience!",
-                  ownership: [
-                  { name: "Player 1", owned: false },
-                  { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: false },
-                  { name: "Player 4", owned: false },
-                  { name: "Player 5", owned: false },
-                  ],
-                  online: true,
-                  gpsEnabled: false,
-				  noSignal: false,
-				  doNotDisturb: false
-                  },
-                  {
-                  art: "img/Profile-Pictures/Team-Instinct-Sprite.png",
-                  name: "Team Instinct Sanctuary",
-                  tag: "team-instinct-offical",
-                  verifiedBadge: "verified-corporate",
-                  gymBadges: [],
-                  team: ["Team Instinct"],
-                  birthday: "June. 18th, 3007",
-                  statusMessage: "Good luck, train hard and grow strong with your team",
-                  ownership: [
-                  { name: "Player 1", owned: false },
-                  { name: "Player 2", owned: false },
-                  { name: "Player 3", owned: false },
-                  { name: "Player 4", owned: false },
-                  { name: "Player 5", owned: false },
-                  ],
-                  online: true,
-                  gpsEnabled: false,
 				  noSignal: false,
 				  doNotDisturb: false
                   },
@@ -519,7 +449,7 @@
                   gymBadges: [],
                   team: ["No Membership"],
                   birthday: "April 3rd, 3012",
-                  statusMessage: "With all the preformances for my loving fans finished, I've began on preperations for my next event and I will let you know about it whenever I can!",
+                  statusMessage: "Unfortunately everyone we will have to delay the show-case at the Parfum Palace for an alleged break-in...",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -542,7 +472,7 @@
                   team: ["No Membership"],
                   contestNames: ['Eevee Tough Contest', 'Sylveon Cutie Contest', 'Flareon Beauty Contest', 'Jolteon Cool Contest'],
                   contestRibbons: [1, 4, 2, 2],
-                  statusMessage: "Congrats to @serena-mystia on her preformance this week! Sad I couldn't make the show but planes keep getting cancelled because of weird weather :(",
+                  statusMessage: "Darn, first my plane got set back and now we have to miss the preformance at Parfum Palace?! @serena-mystia, I hope they find that thief soon and stay safe everyone!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -630,7 +560,7 @@
                   gymBadges: ["Gym_Solar_Badge"],
                   birthday: "June 17th, 3019",
                   team: ["Nouvemur"],
-                  statusMessage: "Coats are useful inventions. Better to buy one and have it but not need it than the other way around, right @rock_n_stock01?",
+                  statusMessage: "For anyone not understanding the non-sense @rock_n_stone01 is going on about, he's heating up rocks with one of his new Pokemon and shoving them them onto his body to 'stay warm'. I've had to give him ice-packs twice now and I'm really regretting him being the one with the near infinite flame source...",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -651,7 +581,7 @@
                   gymBadges: ["Gym_Solar_Badge"],
                   birthday: "Aug. 21st, 3022",
                   team: ["Nouvemur"],
-                  statusMessage: "Man, I swear we're just exiting Lumiose Eastwards and I'm already freezing my Pokeballs off!",
+                  statusMessage: "@breezytraveller_-1, you can go get the most luxury of coats you wanna, but I've got something even better! The power of fire, flint and lot of pockets of rocks!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -672,7 +602,7 @@
                   verifiedBadge: "verified-competitor",
                   birthday: "Jan. 9th, 3021",
                   team: ["Nouvemur"],
-                  statusMessage: "Well that fine is taken care off, but still that was dumb. I didn't even break the dang post! I've seen plenty of parkour videos where they do way more destruction than that!!",
+                  statusMessage: "Finally passing past Victory Road now, I'll be seeing you soon 'Champion'!",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -695,7 +625,7 @@
                   verifiedBadge: "verified-competitor",
                   birthday: "March 1st, 3022",
                   team: ["Prophetic Pâtissiers"],
-                  statusMessage: "Learned the other day that Cotton Spore is really good as a landing cushion. Also unfortunetely learned soon after it is a good fire-starter. Don't ask how I learned about it...",
+                  statusMessage: "Is anyone else feeling like you can never take your eyes of your squad, else they'll start a natural disaster?",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -716,7 +646,7 @@
                   verifiedBadge: "verified-competitor",
                   birthday: "March 14th, 3022",
                   team: ["Prophetic Pâtissiers"],
-                  statusMessage: "Note for any people with froakies, that foam stuff around their neck? Not a great insulator from electricity sockets...",
+                  statusMessage: "Battle well, train hard, and never lose your focus",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -737,7 +667,7 @@
                   verifiedBadge: "verified-competitor",
                   birthday: "Feb 28th, 3022",
                   team: ["Prophetic Pâtissiers"],
-                  statusMessage: "This may sound odd but anyone with a red outfit should probably wear a jacket the next couple of weeks. Some birds apprently learned a thing from bouffalant and will attack anyone with it on!",
+                  statusMessage: "I don't know how, but despite all the astounding gourmet food there is in Kalos, the nearby Waffle House is still such a homey place to grab dinner. Maybe its the company, maybe its the atmosphere, maybe something something, free syrup and butter. #NotSponsored",
                   ownership: [
                   { name: "Player 1", owned: false },
                   { name: "Player 2", owned: false },
@@ -751,7 +681,6 @@
 				  doNotDisturb: false
                   },
                   ];
-
 
 
                   //Meant to be for contacts that are premade but not ready to be put in the plot yet.
@@ -822,8 +751,98 @@
 				  noSignal: false,
 				  doNotDisturb: true
                   },
-                  
+                  {
+                  art: "icons/question.png",
+                  name: "Server Annoucement 6/20/37",
+                  tag: "server-Annoucement",
+                  gymBadges: [],
+                  contestRibbons: [],
+                  contestNames: [],
+                  birthday: "No Birthday Entered",
+                  team: [],
+                  statusMessage: "Server is currently going under some maintenance and will be down for a bit. Users will be unable to view or post anything on Talonflame until the maintenance is over. We do apoligize in advance.",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: false,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: true
+                  }, 
 
+                  //Company Accounts 
+                  {
+                  art: "img/Profile-Pictures/Team-Valor-Sprite.png",
+                  name: "Team Valor Infernos",
+                  tag: "team-valor-offical",
+                  verifiedBadge: "verified-corporate",
+                  gymBadges: [],
+                  team: ["Team Valor"],
+                  birthday: "Oct. 10th, 3005",
+                  statusMessage: "Good luck to all the trainers competiting in the compeition!",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: true,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: false
+                  },
+                  {
+                  art: "img/Profile-Pictures/Team-Mystic-Sprite.png",
+                  name: "Team Mystic Mirage",
+                  tag: "team-mystic-offical",
+                  verifiedBadge: "verified-corporate",
+                  gymBadges: [],
+                  team: ["Team Mystic"],
+                  birthday: "March. 8th, 3006",
+                  statusMessage: "Good luck, preform well, and dazzle the audience!",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: true,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: false
+                  },
+                  {
+                  art: "img/Profile-Pictures/Team-Instinct-Sprite.png",
+                  name: "Team Instinct Sanctuary",
+                  tag: "team-instinct-offical",
+                  verifiedBadge: "verified-corporate",
+                  gymBadges: [],
+                  team: ["Team Instinct"],
+                  birthday: "June. 18th, 3007",
+                  statusMessage: "Good luck, train hard and grow strong with your team",
+                  ownership: [
+                  { name: "Player 1", owned: false },
+                  { name: "Player 2", owned: false },
+                  { name: "Player 3", owned: false },
+                  { name: "Player 4", owned: false },
+                  { name: "Player 5", owned: false },
+                  ],
+                  online: true,
+                  gpsEnabled: false,
+				  noSignal: false,
+				  doNotDisturb: false
+                  },
+                  ]
+                  
+                  const removed_contacts = []
+                  
+                  const template_contacts = [
                   //Base Templates
                   {
                   art: "icons/question.png",
